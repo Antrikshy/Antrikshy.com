@@ -16,25 +16,37 @@ p {
     margin-right: 20%;
 }
 
-#footer_text {
-    font-size: 12px;
-}
+.footer_text { font-size: 12px; }
 
-body {
-    /*background-color: lightgrey;*/
-}
+body { /*background-color: lightgrey;*/ }
 
-#container {
+.container {
     min-height: 100%;
     position: relative;
 }
 
-#header {
+.header {
     height: 120px;
     background-color: grey;
 }
 
-#footer {
+.button_container {
+    text-align: center;
+    height: 120px;
+}
+
+.about_button, .projects_button, .resume_button {
+    display: inline-block;
+    height: 125px;
+    width: 300px;
+    border: 1px solid;
+}
+
+.about_button { background-color: red; }
+.projects_button { background-color: yellow; }
+.resume_button { background-color: blue; }
+
+.footer {
     width: 100%;
     height: 50px;
     position: absolute;
