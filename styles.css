@@ -20,7 +20,9 @@ p {
     font-weight: 600;
 }
 
-.footer_text { font-size: 12px; }
+.footer_text { 
+    font-size: 12px; 
+}
 
 .container {
     min-height: 100%;
@@ -30,6 +32,8 @@ p {
 .header {
     height: 120px;
     background-color: grey;
+    border-bottom: 1px solid;
+    box-shadow: 0 0 15px;
 }
 
 .button_container {
@@ -48,29 +52,38 @@ p {
     background-color: lightgrey;
     color: black;
     box-shadow: 0 0 10px;
-    /*-moz-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
     -ms-transition: 0.5s all ease-in-out;
     -webkit-transition: 0.5s all ease-in-out;
-    -o-transition: 0.5s all ease-in-out;*/
+    -o-transition: 0.5s all ease-in-out;
 }
 
 .home_button {
     /* Add special properties */
     height: 140px;
     background-color: brown;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
 }
 
 .header_button:hover {
     background-color: lightyellow;
     height: 140px;
-    /*-moz-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
     -ms-transition: 0.5s all ease-in-out;
     -webkit-transition: 0.5s all ease-in-out;
-    -o-transition: 0.5s all ease-in-out;*/
+    -o-transition: 0.5s all ease-in-out;
 }
 
 .home_button:hover {
     background-color: lightgreen;
+    height: 150px;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
 }
 
 .footer {
@@ -79,4 +92,6 @@ p {
     position: absolute;
     bottom: 0;
     background-color: darkgrey;
+    border-top: 1px solid;
+    box-shadow: 0 0 15px;
 }
