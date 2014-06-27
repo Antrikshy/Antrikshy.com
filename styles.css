@@ -1,12 +1,14 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 900px;
 }
 
 h1 {
     text-align: center;
+    margin-top: 120px;
     font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -14,11 +16,11 @@ p {
     font-size: 25px;
     margin-left: 20%;
     margin-right: 20%;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
 }
 
 .footer_text { font-size: 12px; }
-
-body { /*background-color: lightgrey;*/ }
 
 .container {
     min-height: 100%;
@@ -33,18 +35,43 @@ body { /*background-color: lightgrey;*/ }
 .button_container {
     text-align: center;
     height: 120px;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700;
 }
 
-.about_button, .projects_button, .resume_button {
+.header_button {
     display: inline-block;
-    height: 125px;
+    height: 130px;
+    line-height: 130px;
     width: 300px;
-    border: 1px solid;
+    background-color: lightgrey;
+    color: black;
+    box-shadow: 0 0 10px;
+    /*-moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;*/
 }
 
-.about_button { background-color: red; }
-.projects_button { background-color: yellow; }
-.resume_button { background-color: blue; }
+.home_button {
+    /* Add special properties */
+    height: 140px;
+    background-color: brown;
+}
+
+.header_button:hover {
+    background-color: lightyellow;
+    height: 140px;
+    /*-moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;*/
+}
+
+.home_button:hover {
+    background-color: lightgreen;
+}
 
 .footer {
     width: 100%;

@@ -1,0 +1,50 @@
+/*#resume_controls {
+    border: 2px solid;
+    height: 50%;
+    width: 300px;
+    display: inline-block;
+}
+
+#resume_content {
+    border: 2px solid;
+    height: 50%;
+    width: 700px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#interactive_resume {
+    text-align: center;
+}*/
+
+.content {
+    text-align: center;
+}
+
+.download_link {
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-color: lightblue;
+    text-align: center;
+    font-family: 'Source Serif Pro';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.download_link:hover {
+    transition: 0.5s;
+    background-color: limegreen;
+}
+
+#drive_resume {
+    display: inline-block;
+    width: 850px;
+    height: 1050px;
+}
+
+a:visited, a:link {
+    text-decoration: none;
+    color: black;
+}
