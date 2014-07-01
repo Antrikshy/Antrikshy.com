@@ -61,7 +61,7 @@ p {
 .home_button {
     /* Add special properties */
     height: 140px;
-    background-color: brown;
+    background-color: skyblue;
     -moz-transition: 0.5s all ease-in-out;
     -ms-transition: 0.5s all ease-in-out;
     -webkit-transition: 0.5s all ease-in-out;

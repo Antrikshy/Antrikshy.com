@@ -1,0 +1,23 @@
+.content {
+    text-align: center;
+    overflow: auto;
+    padding-bottom: 130px;
+}
+
+.project_container {
+    display: inline-block;
+    width: 85%;
+    height: 130px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    background-color: lightgrey;
+    box-shadow: 0 0 8px;
+}
+
+.project_container p {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 18px;
+    overflow: none;
+}

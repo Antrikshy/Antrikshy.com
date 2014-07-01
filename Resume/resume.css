@@ -47,7 +47,8 @@
     border: none;
 }
 
-a:visited, a:link {
+.content a {
+    width: 200px;
     text-decoration: none;
     color: black;
 }
