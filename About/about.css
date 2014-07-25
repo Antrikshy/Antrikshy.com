@@ -1,0 +1,56 @@
+p {
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 40%;
+    font-size: 21px;
+    color: #FFFFFF;
+    text-shadow: black 1px 1px 2px;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 15%;
+}
+
+.content {
+    text-align: center;
+    overflow: auto;
+    padding-bottom: 130px;
+    background-image: url(./about_background.jpg);
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: -400px 0; 
+    box-shadow: inset 0 0 5px;  
+}
+
+#about_header {
+    color: #FFFFFF;
+}
+
+#loading_msg {
+    font-size: 25px;
+    color: darkgrey;
+}
+
+#about_website {
+    height: 700px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+    background-color: #FFFFF9;
+    box-shadow: 0 0 3px;
+}
+
+#about_website_header {
+    font-size: 40px;
+    margin-right: 5%;
+    padding-top: 40px;
+}
+
+#about_website_text {
+    color: #000000;
+    text-shadow: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}

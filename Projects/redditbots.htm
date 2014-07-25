@@ -1,0 +1,71 @@
+<!-- DOCTYPE html -->
+<html>
+
+    <head>
+        <title>Projects / Antriksh's reddit bots</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+        <!-- Meta tags -->
+        <meta name="description" content="About reddit bot projects by /u/Antrikshy" />
+
+        <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Antriksh's Projects - reddit bots" />
+        <meta property="og:url" content="http://www.antrikshy.com/Projects/redditbots.htm" />
+        <meta property="og:image" content="" /> <!-- TODO: Add image link? -->
+
+        <!-- Link CSS, jQuery files and fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="../styles.css" />
+        <link type="text/css" rel="stylesheet" href="./projects.css" />
+        <script type="text/javascript" src="../jquery/2.1.1/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="../script.js"> </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="button_container">
+                    <a href = "../index.htm"><div class="header_button home_button">Home</div></a>
+                    <a href = "./projects.htm"><div class="header_button back_projects_button">Projects</div></a>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="project_description">
+                    <h2>Story</h2>
+                    <p>
+                        In early 2014, I wanted to give my freshly acquired programming skills a test run. Besides this, I had newly learned Python on Codecademy.com and I wanted to be able to add the language to the 'skills' section on my resume. I was always mildly interested in bots people wrote for reddit. I looked up some guides and got to work.<br /><br />
+
+                        The bot I came up with was not very impressive. However, it got me interested in programming these small projects on the side. I set up a Raspberry Pi as a server for the bot, learning some nifty Unix features in the process (like nohup).
+                    </p>
+                    <h2>For the curious</h2>
+                        <p><b>Learning objectives:</b> Any reddit bots I write are in Python. Through them, I have gained a strong understanding of the language, its style and its best practices. I have a habit of outlining my learning objectives for each of my reddit bots on their individual GitHub pages, linked through their fork buttons below.<br /><br />
+
+                        <b>How they work:</b> I use PRAW, the Python Reddit API Wrapper, a Python module that wraps the reddit API for use with Python programs. Because my bots don't authenticate a reddit user and instead use their own accounts, they don't need to be authorized using Oauth. PRAW takes care of most things and provides me with a very convenient set of methods to interact with reddit.
+                        </p>
+                    <h2>Download + GitHub</h2>
+
+                    <!-- <div class="download_and_github">
+                        <div class="github_buttons">
+                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=TwitterRTAnalyzer&type=fork&count=false&size=large"
+      allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe><br />
+                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=TwitterRTAnalyzer&type=follow&count=false&size=large"
+      allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe>
+                        </div>
+                       
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>
+                <span class="footer_text">
+                    Copyright &copy; 2014, Antriksh Yadav. All rights reserved.
+                </span>
+                </p>
+            </div>
+        </div>
+    </body>
+
+</html>

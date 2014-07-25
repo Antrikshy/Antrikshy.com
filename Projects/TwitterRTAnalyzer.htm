@@ -1,0 +1,77 @@
+<html>
+
+    <head>
+        <title>Projects / TwitterRTAnalyzer</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+        <!-- Meta tags -->
+        <meta name="description" content="TwitterRTAnalyzer - Search Twitter for keywords and see which active users are talking about it." />
+
+        <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Antriksh's Projects - TwitterRTAnalyzer" />
+        <meta property="og:url" content="http://www.antrikshy.com/Projects/TwitterRTAnalyzer.htm" />
+        <meta property="og:image" content="" /> <!-- TODO: Add image link? -->
+
+        <!-- Link CSS, jQuery files and fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="../styles.css" />
+        <link type="text/css" rel="stylesheet" href="./projects.css" />
+        <script type="text/javascript" src="../jquery/2.1.1/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="../script.js"> </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="button_container">
+                    <a href = "../index.htm"><div class="header_button home_button">Home</div></a>
+                    <a href = "./projects.htm"><div class="header_button back_projects_button">Projects</div></a>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="project_description">
+                    <h2>Story</h2>
+                    <p>
+                        This retweet- and reply-based Twitter activity scanner was purpose built for my Dad. He wished for a tool for finding tweets from like-minded people and sort them based on how active and popular they are. This program does this in a rudimentary way by gathering users from the search results and checking how many replies and retweets they make.<br /><br />
+
+                        I intend to make it smarter in the future. At this time, I only use several lists of dictionaries, populate them and repopulate them before sorting them. While scanning thousands of tweets, it is very slow. I intend to implement more advanced data structures at some point. I may also experiment with a GUI.
+                    </p>
+                    <h2>For the curious</h2>
+                        <p><b>Learning objectives:</b> I did not put too much thought into efficient data structures and algorithms for this project. I focused on learning the required authentication processes that go behind programs like this. I spent a good while trying to implement Oauth by hand. I attempted to communicate with the Twitter API directly by getting the request keys and then access keys and whatnot. But it didn't work out. So I resorted to using rauth for the authentication. I learned a huge amount in this process.<br /><br />
+
+                        <b>How it works:</b> It uses the PIN method for Twitter authentication at first use. rauth handles the Oauth dance, the user is prompted to browse to a URL and use a PIN code to log in. Their access keys are saved for later use in a config file so they don't have to log in again. At this time, the program does three things using the user's authentication:
+                        <ol>
+                            <li>It searches Twitter for requested keywords.</li>
+                            <li>It builds a database of all users that show up in results (as tweeters and users in search) and the number of their followers.</li>
+                            <li>It scans up to 200 of their latest tweets and calculates the percentage of retweets and replies in them.</li>
+                        </ol>
+                        </p>
+                    <h2>Download + GitHub</h2>
+
+                    <div class="download_and_github">
+                        <!-- <div class="download_button_area">
+                            <div class="download_link"><a href="https://s3-us-west-1.amazonaws.com/antrikshyprojects/safcat.safariextz">Download</a></div>
+                        </div><br /> -->
+                        <div class="github_buttons">
+                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=safcat&type=fork&count=false&size=large"
+      allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe><br />
+                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=safcat&type=follow&count=false&size=large"
+      allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>
+                <span class="footer_text">
+                    Copyright &copy; 2014, Antriksh Yadav. All rights reserved.
+                </span>
+                </p>
+            </div>
+        </div>
+    </body>
+
+</html>

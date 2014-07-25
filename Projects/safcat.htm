@@ -1,0 +1,75 @@
+<!-- DOCTYPE html -->
+<html>
+
+    <head>
+        <title>Projects / safcat - THE Safari extension for gfycat</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+        <!-- Meta tags -->
+        <meta name="description" content="safcat - an unofficial Safari extension for gfycat users. With one click, slow-loading gifs are uploaded to gfycat, where they play much faster as video!" />
+
+        <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Antriksh's Projects - safcat" />
+        <meta property="og:url" content="http://www.antrikshy.com/Projects/safcat.htm" />
+        <meta property="og:image" content="" /> <!-- TODO: Add image link? -->
+
+        <!-- Link CSS, jQuery files and fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="../styles.css" />
+        <link type="text/css" rel="stylesheet" href="./projects.css" />
+        <script type="text/javascript" src="../jquery/2.1.1/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="../script.js"> </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="button_container">
+                    <a href = "../index.htm"><div class="header_button home_button">Home</div></a>
+                    <a href = "./projects.htm"><div class="header_button back_projects_button">Projects</div></a>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="project_description">
+                    <h2>Story</h2>
+                    <p>
+                        While visiting family in Cambodia, I had to endure a torturously slow Internet connection. While there was no viable solution for slow-downloading websites and sluggish video streaming, there was one for animated gifs. <br /><br />
+
+                        While gifs are increasingly popular on the Internet right now, they load slowly in general. There is a solution, gfycat - a tool that compresses and converts gifs to HTML5 video. But using that requires manually making it fetch every gif I want to watch, which takes about the same time but more effort. There were no extensions for the browser of my choice (Safari) that made this easier.<br /><br />
+
+                        I decided to give browser extensions a try. After reading piles of JavaScript and Apple documentation, I came up with safcat - a toolbar button that uploads any open gif to gfycat and plays them back immediately.
+                    </p>
+                    <h2>For the curious</h2>
+                        <p><b>Learning objectives:</b> I made this mostly for my own convenience, but also to learn JavaScript, to get an idea about browser extension APIs and to see how JSON is used, since I haven't learned these in university so far.<br /> <br />
+
+                        <b>How it works:</b> When you press the button, JavaScript code inside the extension sends a certain request to gfycat, which includes your active tab's address. gfycat attempts to fetch the content from your URL. If it is a gif, it is fetched and you are redirected to the HTML5 video version of it. If it fails for whatever reason, you get an error message.
+                        </p>
+                    <h2>Download + GitHub</h2>
+
+                    <div class="download_and_github">
+                        <div class="download_button_area">
+                            <div class="download_link"><a href="https://s3-us-west-1.amazonaws.com/antrikshyprojects/safcat.safariextz">Download</a></div>
+                        </div><br />
+                        <div class="github_buttons">
+                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=TwitterRTAnalyzer&type=fork&count=false&size=large"
+      allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe><br />
+                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=TwitterRTAnalyzer&type=follow&count=false&size=large"
+      allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>
+                <span class="footer_text">
+                    Copyright &copy; 2014, Antriksh Yadav. All rights reserved.
+                </span>
+                </p>
+            </div>
+        </div>
+    </body>
+
+</html>

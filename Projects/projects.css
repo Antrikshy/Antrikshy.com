@@ -1,3 +1,27 @@
+.content p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    margin-right: 0;
+}
+
+.content b {
+    font-weight: 700;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.content ol {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    margin-right: 0;
+}
+
 .content {
     text-align: center;
     overflow: auto;
@@ -7,17 +31,86 @@
 .project_container {
     display: inline-block;
     width: 85%;
-    height: 130px;
+    height: 150px;
     border: 1px solid;
     margin-bottom: 20px;
-    background-color: lightgrey;
-    box-shadow: 0 0 8px;
+    background-color: #A8DBD8;
+    box-shadow: 0 0 3px;
+    -moz-transition: 0.15s all ease-in-out;
+    -ms-transition: 0.15s all ease-in-out;
+    -webkit-transition: 0.15s all ease-in-out;
+    -o-transition: 0.15s all ease-in-out;
+}
+
+.project_container:hover {
+    background-color: #F3832B;
+    height: 170px;
+    -moz-transition: 0.15s all ease-in-out;
+    -ms-transition: 0.15s all ease-in-out;
+    -webkit-transition: 0.15s all ease-in-out;
+    -o-transition: 0.15s all ease-in-out;
 }
 
 .project_container p {
-    text-align: left;
+    text-align: center;
     margin-top: 20px;
     margin-left: 30px;
+    margin-right: 30px;
     font-size: 18px;
     overflow: none;
+}
+
+.back_projects_button {
+    height: 140px;
+    background-color: skyblue;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+}
+
+.back_projects_button:hover {
+    background-color: lightgreen;
+    height: 150px;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+}
+
+.project_description {
+    width: 50%;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.download_and_github {
+    margin-right: 0;
+    text-align: right;
+}
+
+.github_buttons {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.download_button_area {
+    display: inline-block;
+}
+
+.download_link {
+    margin: 0 auto;
+    width: 180px;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-color: lightblue;
+    text-align: center;
+    font-family: 'Source Serif Pro';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.download_link:hover {
+    transition: 0.5s;
+    background-color: limegreen;
 }

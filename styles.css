@@ -1,7 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 900px;
+    height: 100%;
+    background-color: #FFFFFF;
 }
 
 h1 {
@@ -11,13 +12,33 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
+h2 {
+    text-align: right;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 p {
     text-align: center;
     font-size: 25px;
     margin-left: 20%;
     margin-right: 20%;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+ol {
+    text-align: center;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .footer_text { 
@@ -25,22 +46,26 @@ p {
 }
 
 .container {
-    min-height: 100%;
+    background-color: #FFFFF9;
+    height: 1000px;
+    border-collapse: collapse;
+    display: table;
+    min-width: 100%;
     position: relative;
 }
 
 .header {
     height: 120px;
-    background-color: grey;
+    background-color: #374140;
     border-bottom: 1px solid;
-    box-shadow: 0 0 15px;
+    box-shadow: 0 1px 2px;
 }
 
 .button_container {
     text-align: center;
     height: 120px;
     font-size: 30px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
@@ -49,49 +74,51 @@ p {
     height: 130px;
     line-height: 130px;
     width: 300px;
-    background-color: lightgrey;
+    background-color: #69D2E7;
     color: black;
-    box-shadow: 0 0 10px;
-    -moz-transition: 0.5s all ease-in-out;
-    -ms-transition: 0.5s all ease-in-out;
-    -webkit-transition: 0.5s all ease-in-out;
-    -o-transition: 0.5s all ease-in-out;
-}
-
-.home_button {
-    /* Add special properties */
-    height: 140px;
-    background-color: skyblue;
-    -moz-transition: 0.5s all ease-in-out;
-    -ms-transition: 0.5s all ease-in-out;
-    -webkit-transition: 0.5s all ease-in-out;
-    -o-transition: 0.5s all ease-in-out;
+    box-shadow: 0 2px 3px;
+    -moz-transition: 0.15s all ease-in-out;
+    -ms-transition: 0.15s all ease-in-out;
+    -webkit-transition: 0.15s all ease-in-out;
+    -o-transition: 0.15s all ease-in-out;
 }
 
 .header_button:hover {
-    background-color: lightyellow;
+    /*background-color: #FFD34E;*/
+    background-color: #F38630;
     height: 140px;
-    -moz-transition: 0.5s all ease-in-out;
-    -ms-transition: 0.5s all ease-in-out;
-    -webkit-transition: 0.5s all ease-in-out;
-    -o-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.15s all ease-in-out;
+    -ms-transition: 0.15s all ease-in-out;
+    -webkit-transition: 0.15s all ease-in-out;
+    -o-transition: 0.15s all ease-in-out;
+}
+
+.home_button {
+    height: 140px;
+    background-color: #F38630;
+    -moz-transition: 0.15s all ease-in-out;
+    -ms-transition: 0.15s all ease-in-out;
+    -webkit-transition: 0.15s all ease-in-out;
+    -o-transition: 0.15s all ease-in-out;
 }
 
 .home_button:hover {
-    background-color: lightgreen;
+    background-color: #FA6900;
     height: 150px;
-    -moz-transition: 0.5s all ease-in-out;
-    -ms-transition: 0.5s all ease-in-out;
-    -webkit-transition: 0.5s all ease-in-out;
-    -o-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.15s all ease-in-out;
+    -ms-transition: 0.15s all ease-in-out;
+    -webkit-transition: 0.15s all ease-in-out;
+    -o-transition: 0.15s all ease-in-out;
 }
 
 .footer {
     width: 100%;
+    display: table-row;
+    vertical-align: bottom;
     height: 50px;
     position: absolute;
-    bottom: 0;
-    background-color: darkgrey;
+    background-color: #374140;
     border-top: 1px solid;
-    box-shadow: 0 0 15px;
+    box-shadow: 0 -1px 2px;
+    color: #FFFFFF;
 }
