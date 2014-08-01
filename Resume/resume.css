@@ -50,6 +50,8 @@
 
 .content a {
     width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-decoration: none;
     color: black;
 }

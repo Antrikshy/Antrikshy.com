@@ -1,0 +1,73 @@
+<html>
+
+    <head>
+        <title>Projects / Unnamed Homepage Project</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+        <!-- Meta tags -->
+        <!-- <meta name="description" content="TwitterRTAnalyzer - Search Twitter for keywords and see which active users are talking about it." /> -->
+
+        <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Antriksh's Projects - Browser Homepage" />
+        <meta property="og:url" content="http://www.antrikshy.com/Projects/startpage.htm" />
+        <meta property="og:image" content="" /> <!-- TODO: Add image link? -->
+
+        <!-- Link CSS, jQuery files and fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="../styles.css" />
+        <link type="text/css" rel="stylesheet" href="./projects.css" />
+        <script type="text/javascript" src="../jquery/2.1.1/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="../script.js"> </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="button_container">
+                    <a href = "../index.htm"><div class="header_button home_button">Home</div></a>
+                    <a href = "./projects.htm"><div class="header_button back_projects_button">Projects</div></a>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="project_description">
+                    <h2>Story</h2>
+                    <p>
+                        I just started making this on a whim. I thought it would be a simple three or four day long project, but it turned out to be much more complex. As always, I wanted to make this as perfect as I could. I ended up spending several weeks, working hours on end to make sure no user would ever have to see a broken view of the website. My goal was to make a simple and pretty start page that would greet a user by name and possibly use natural language to tell them about the weather.<br /><br />
+
+                        Turns out making a website with client- <em>and</em> server-side processing on your own when you're an absolute beginner is very complicated. I tried my best to make PHP and JavaScript work together and complement each other. There may be some ugly code inside, which I will beautify as I go if it makes the page more efficient. After all, it's meant to be used as a homepage. It needs to load quickly.
+                    </p>
+                    <h2>For the curious</h2>
+                        <p><b>Learning objectives:</b> I started this off as some PHP practice. I thought server-side scripting was something that would be nice to have under my belt, so I set off to learn it. In the process, I learned much, <em>much</em> more than I had planned to. I learned how to use cookies for per-user persistence, I learned how awesome Bootstrap is and I brushed up my HTML, CSS and JavaScript. A lot. I also used the forecast.io API and designed part of the website graphics myself (rest was done by my younger brother), so it was a nice dip in some graphic design as well.<br /><br />
+
+                        To summarize: I now have a better feel over how things work on the inside.<br /><br />
+
+                        <b>How it works:</b> The first time a user visits the site, they are greeted by a location prompt. If they don't allow the website to get their location (using HTML5), the server tries to get an approximate location using their IP address. Then they can choose to personalize their website using their name and temperature unit preference. This data is stored in their browser along with their coordinates so that they don't have to do this each time they visit.<br /><br />
+
+                        The server calculates weather data and sets the background appropriately <em>before</em> the page is downloaded so it is faster for the user. Time and date is calculated client-side.
+                        </p>
+                    <h2>Link + GitHub</h2>
+                        <p> Coming when it's done! </p>
+                    <!-- <div class="download_and_github">
+                        <div class="github_buttons">
+                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=safcat&type=fork&count=false&size=large"
+      allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe><br />
+                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=safcat&type=follow&count=false&size=large"
+      allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>
+                <span class="footer_text">
+                    Copyright &copy; 2014, Antriksh Yadav. All rights reserved.
+                </span>
+                </p>
+            </div>
+        </div>
+    </body>
+
+</html>

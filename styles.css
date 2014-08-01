@@ -47,7 +47,7 @@ ol {
 
 .container {
     background-color: #FFFFF9;
-    height: 1000px;
+    height: auto;
     border-collapse: collapse;
     display: table;
     min-width: 100%;
@@ -71,12 +71,17 @@ ol {
 
 .header_button {
     display: inline-block;
-    height: 130px;
+    height: 122px;
     line-height: 130px;
     width: 300px;
-    background-color: #69D2E7;
+    background: linear-gradient(to bottom, #69D2E7, #22B5D3);
+    background: -webkit-linear-gradient(top, #69D2E7, #22B5D3);
+    background: -moz-linear-gradient(top, #69D2E7, #22B5D3);
+    background: -ms-linear-gradient(top, #69D2E7, #22B5D3);
+    background: -o-linear-gradient(top, #69D2E7, #22B5D3);
     color: black;
     box-shadow: 0 2px 3px;
+    border-bottom: 3px solid #546362;
     -moz-transition: 0.15s all ease-in-out;
     -ms-transition: 0.15s all ease-in-out;
     -webkit-transition: 0.15s all ease-in-out;
@@ -84,9 +89,13 @@ ol {
 }
 
 .header_button:hover {
-    /*background-color: #FFD34E;*/
-    background-color: #F38630;
-    height: 140px;
+    background: linear-gradient(to bottom, #F38630, #E76C0D);
+    background: -webkit-linear-gradient(top, #F38630, #E76C0D);
+    background: -moz-linear-gradient(top, #F38630, #E76C0D);
+    background: -ms-linear-gradient(top, #F38630, #E76C0D);
+    background: -o-linear-gradient(top, #F38630, #E76C0D);
+    height: 130px;
+    border-bottom: 5px solid #546362;
     -moz-transition: 0.15s all ease-in-out;
     -ms-transition: 0.15s all ease-in-out;
     -webkit-transition: 0.15s all ease-in-out;
@@ -94,8 +103,13 @@ ol {
 }
 
 .home_button {
-    height: 140px;
-    background-color: #F38630;
+    height: 130px;
+    background: linear-gradient(to bottom, #F38630, #E76C0D);
+    background: -webkit-linear-gradient(top, #F38630, #E76C0D);
+    background: -moz-linear-gradient(top, #F38630, #E76C0D);
+    background: -ms-linear-gradient(top, #F38630, #E76C0D);
+    background: -o-linear-gradient(top, #F38630, #E76C0D);
+    border-bottom: 5px solid #546362;
     -moz-transition: 0.15s all ease-in-out;
     -ms-transition: 0.15s all ease-in-out;
     -webkit-transition: 0.15s all ease-in-out;
@@ -103,12 +117,20 @@ ol {
 }
 
 .home_button:hover {
-    background-color: #FA6900;
-    height: 150px;
+    background: linear-gradient(to bottom, #FA6900, #CC5500);
+    background: -webkit-linear-gradient(top, #FA6900, #CC5500);
+    background: -moz-linear-gradient(top, #FA6900, #CC5500);
+    background: -ms-linear-gradient(top, #FA6900, #CC5500);
+    background: -o-linear-gradient(top, #FA6900, #CC5500);
+    height: 140px;
     -moz-transition: 0.15s all ease-in-out;
     -ms-transition: 0.15s all ease-in-out;
     -webkit-transition: 0.15s all ease-in-out;
     -o-transition: 0.15s all ease-in-out;
+}
+
+#home_padder {
+    height: 300px;
 }
 
 .footer {

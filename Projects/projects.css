@@ -44,7 +44,6 @@
 
 .project_container:hover {
     background-color: #F3832B;
-    height: 170px;
     -moz-transition: 0.15s all ease-in-out;
     -ms-transition: 0.15s all ease-in-out;
     -webkit-transition: 0.15s all ease-in-out;
@@ -105,8 +104,8 @@
     transition: 0.5s;
     background-color: lightblue;
     text-align: center;
-    font-family: 'Source Serif Pro';
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 25px;
 }
 
