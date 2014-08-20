@@ -17,6 +17,10 @@
     text-align: center;
 }*/
 
+html, body {
+    background-color: #DCF4F7;
+}
+
 .content {
     text-align: center;
 }

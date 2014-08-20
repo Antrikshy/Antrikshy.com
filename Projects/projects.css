@@ -1,3 +1,7 @@
+html, body {
+    background-color: #F5F4F4;
+}
+
 .content p {
     font-size: 18px;
     font-weight: 300;
@@ -5,17 +9,17 @@
     margin-right: 0;
 }
 
-.content b {
+b {
     font-weight: 700;
 }
 
-.content a {
+a {
     text-decoration: none;
     color: black;
     font-size: 25px;
 }
 
-.content ol {
+ol {
     font-size: 18px;
     font-weight: 300;
     text-align: justify;
@@ -30,7 +34,7 @@
 
 .project_container {
     display: inline-block;
-    width: 85%;
+    width: 80%;
     height: 150px;
     border: 1px solid;
     margin-bottom: 20px;

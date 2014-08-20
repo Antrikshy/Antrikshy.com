@@ -2,20 +2,22 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: #FFFFF9;
 }
 
 h1 {
     text-align: center;
-    margin-top: 120px;
-    font-size: 70px;
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 80px;
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 40px;
 }
 
 h2 {
     text-align: right;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -46,7 +48,6 @@ ol {
 }
 
 .container {
-    background-color: #FFFFF9;
     height: auto;
     border-collapse: collapse;
     display: table;
@@ -66,7 +67,7 @@ ol {
     height: 120px;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .header_button {
@@ -130,7 +131,7 @@ ol {
 }
 
 #home_padder {
-    height: 300px;
+    height: 200px;
 }
 
 .footer {
@@ -143,4 +144,10 @@ ol {
     border-top: 1px solid;
     box-shadow: 0 -1px 2px;
     color: #FFFFFF;
+}
+
+.footer a {
+    color: #FFFFF9;
+    text-decoration: underline;
+    font-size: 1em;
 }

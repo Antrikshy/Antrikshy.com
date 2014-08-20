@@ -2,15 +2,15 @@
 <html>
 
     <head>
-        <title>Projects / safcat - THE Safari extension for gfycat</title>
+        <title>Projects / x-poster - Cross-post on reddit with two clicks</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         
         <!-- Meta tags -->
-        <meta name="description" content="safcat - an unofficial Safari extension for gfycat users. With one click, slow-loading gifs are uploaded to gfycat, where they play much faster as video!" />
+        <meta name="description" content="x-poster - Safari extension that adds a small xpost button on reddit, which lets you quickly and easily cross-post content, no copy-paste required." />
 
         <!-- Open Graph tags -->
-        <meta property="og:site_name" content="Antriksh's Projects - safcat" />
-        <meta property="og:url" content="http://www.antrikshy.com/Projects/safcat.htm" />
+        <meta property="og:site_name" content="Antriksh's Projects - x-poster" />
+        <meta property="og:url" content="http://www.antrikshy.com/Projects/x-poster.htm" />
         <meta property="og:image" content="" /> <!-- TODO: Add image link? -->
 
         <!-- Link CSS, jQuery files and fonts -->
@@ -35,27 +35,25 @@
                 <div class="project_description">
                     <h2>Story</h2>
                     <p>
-                        While visiting family in Cambodia, I had to endure a torturously slow Internet connection. While there was no viable solution for slow-downloading websites and sluggish video streaming, there was one for animated gifs. <br /><br />
+                        On reddit, I frequently share content from one subreddit to another if I know a different community that will enjoy it. It's called cross-posting (x-posting) and is encouraged by the reddiquette.<br /><br />
 
-                        While gifs are increasingly popular on the Internet right now, they load slowly in general. There is a solution, gfycat - a tool that compresses and converts gifs to HTML5 video. But using that requires manually making it fetch every gif I want to watch, which takes about the same time but more effort. There were no extensions for the browser of my choice (Safari) that made this easier.<br /><br />
+                        This requires some work. A user opens a new tab, goes to the submission page, switches back, copies the URL, pastes, switches back, copies the title, pastes, adds something like '[x-post from /r/subreddit]', types the other subreddit's name and hits submit. I always found it a bit silly that reddit does not have a button for this on the comments page.<br /><br />
 
-                        I decided to give browser extensions a try. After reading piles of JavaScript and Apple documentation, I came up with safcat - a toolbar button that uploads any open gif to gfycat and plays them back immediately.
+                        Then it struck me. I could modify the page's CSS to add a button that would automate this. It was also possible to make it sit flush with reddit's design. So I made this extension. It adds a tiny 'xpost' button on a post's comments page, under its title. It goes next to other reddit buttons like 'share'. For people using the Reddit Enhancement Suite browser extension, it fits in snugly with the additional buttons created by that extension.
                     </p>
                     <h2>For the curious</h2>
-                        <p><b>Learning objectives:</b> I made this mostly for my own convenience, but also to learn JavaScript, to get an idea about browser extension APIs and to see how JSON is used, since I haven't learned these in university so far.<br /> <br />
-
-                        <b>How it works:</b> When you press the button, JavaScript code inside the extension sends a certain request to gfycat, which includes your active tab's address. gfycat attempts to fetch the content from your URL. If it is a gif, it is fetched and you are redirected to the HTML5 video version of it. If it fails for whatever reason, you get an error message.
+                        <b>How it works:</b> I use JavaScript to find the button container on the reddit comments page and append a new button to it. It simply links to a pre-formatted submission page, with data from other page elements on the comments page (post title and URL).
                         </p>
                     <h2>Download + GitHub</h2>
 
                     <div class="download_and_github">
                         <div class="download_button_area">
-                            <div class="download_link"><a href="https://s3-us-west-1.amazonaws.com/antrikshyprojects/safcat.safariextz">Download</a></div>
+                            <div class="download_link"><a href="https://s3-us-west-1.amazonaws.com/antrikshyprojects/x-poster.safariextz">Download</a></div>
                         </div><br />
                         <div class="github_buttons">
-                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=safcat&type=fork&count=false&size=large"
+                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=x-poster&type=fork&count=false&size=large"
       allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe><br />
-                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=safcat&type=follow&count=false&size=large"
+                           <iframe src="http://ghbtns.com/github-btn.html?user=Antrikshy&repo=x-poster&type=follow&count=false&size=large"
       allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe>
                         </div>
                     </div>
