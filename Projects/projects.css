@@ -38,7 +38,7 @@ ol {
     height: 150px;
     border: 1px solid;
     margin-bottom: 20px;
-    background-color: #A8DBD8;
+    background-color: #34AAE8;
     box-shadow: 0 0 3px;
     -moz-transition: 0.15s all ease-in-out;
     -ms-transition: 0.15s all ease-in-out;
@@ -47,11 +47,15 @@ ol {
 }
 
 .project_container:hover {
-    background-color: #F3832B;
+    background-color: #F2552C;
     -moz-transition: 0.15s all ease-in-out;
     -ms-transition: 0.15s all ease-in-out;
     -webkit-transition: 0.15s all ease-in-out;
     -o-transition: 0.15s all ease-in-out;
+}
+
+.project_container:hover a {
+    color: white;
 }
 
 .project_container p {
@@ -65,7 +69,6 @@ ol {
 
 .back_projects_button {
     height: 140px;
-    background-color: skyblue;
     -moz-transition: 0.5s all ease-in-out;
     -ms-transition: 0.5s all ease-in-out;
     -webkit-transition: 0.5s all ease-in-out;
@@ -73,7 +76,6 @@ ol {
 }
 
 .back_projects_button:hover {
-    background-color: lightgreen;
     height: 150px;
     -moz-transition: 0.5s all ease-in-out;
     -ms-transition: 0.5s all ease-in-out;
