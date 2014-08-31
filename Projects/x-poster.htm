@@ -20,6 +20,16 @@
         <link type="text/css" rel="stylesheet" href="./projects.css" />
         <script type="text/javascript" src="../jquery/2.1.1/jquery-2.1.1.js"></script>
         <script type="text/javascript" src="../script.js"> </script>
+
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-54318329-1', 'auto');
+              ga('send', 'pageview');
+        </script>
     </head>
 
     <body>
@@ -42,7 +52,7 @@
                         Then it struck me. I could modify the page's CSS to add a button that would automate this. It was also possible to make it sit flush with reddit's design. So I made this extension. It adds a tiny 'xpost' button on a post's comments page, under its title. It goes next to other reddit buttons like 'share'. For people using the Reddit Enhancement Suite browser extension, it fits in snugly with the additional buttons created by that extension.
                     </p>
                     <h2>For the curious</h2>
-                        <b>How it works:</b> I use JavaScript to find the button container on the reddit comments page and append a new button to it. It simply links to a pre-formatted submission page, with data from other page elements on the comments page (post title and URL).
+                        <p><b>How it works:</b> I use JavaScript to find the button container on the reddit comments page and append a new button to it. It simply links to a pre-formatted submission page, with data from other page elements on the comments page (post title and URL).
                         </p>
                     <h2>Download + GitHub</h2>
 
@@ -62,10 +72,8 @@
 
             <div class="footer">
                 <p>
-                <span class="footer_text">
                     Copyright &copy; 2014, Antriksh Yadav. Released under the MIT open-source license. See <a href='http://www.github.com/Antrikshy/Antrikshy.com'>GitHub</a> for details. 
                     Contact me at <a href='mailto:antrikshy@gmail.com'>Antrikshy@gmail.com</a>
-                </span>
                 </p>
             </div>
         </div>

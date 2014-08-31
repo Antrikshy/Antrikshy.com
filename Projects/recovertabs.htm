@@ -20,6 +20,16 @@
         <link type="text/css" rel="stylesheet" href="./projects.css" />
         <script type="text/javascript" src="../jquery/2.1.1/jquery-2.1.1.js"></script>
         <script type="text/javascript" src="../script.js"> </script>
+
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-54318329-1', 'auto');
+              ga('send', 'pageview');
+        </script>
     </head>
 
     <body>
@@ -37,7 +47,9 @@
                     <p>
                         On Windows, it's pretty standard to expect a web browser to have a reopen closed tabs feature. Usually,this is done by the Ctrl+Shift+T keyboard shortcut. This is common on Mac as well. Most browsers do this using Cmd+Shift+T. Except Apple's Safari. Pressing Cmd+Z to undo reopens up to one closed tab and doesn't always work.<br /><br />
 
-                        I have seen a lot of clamoring about this feature on the Internet. It doesn't look like anyone has ever made a simple, no-frills, standalone extension to implement this feature. So I took it upon myself to do it.
+                        I have seen a lot of clamoring about this feature on the Internet. I was inspired by this reddit thread in particular. It doesn't look like anyone has ever made a simple, no-frills, standalone extension to implement this feature. So I took it upon myself to do it.<br /><br />
+
+                        I announced it on a few Mac-related subreddits and within the first few days, it was downloaded thousands of times.
                     </p>
                     <h2>For the curious</h2>
                         <p><b>How it works:</b> Using the Safari API, I listen for the signal the browser sends when a tab is about to close. Before it closes, I save the URL of the target tab in an array. As tabs are closed, the URLs pile up. Cmd+Shift+T pops them out and opens new tabs with this URL.
@@ -60,10 +72,8 @@
 
             <div class="footer">
                 <p>
-                <span class="footer_text">
                     Copyright &copy; 2014, Antriksh Yadav. Released under the MIT open-source license. See <a href='http://www.github.com/Antrikshy/Antrikshy.com'>GitHub</a> for details. 
                     Contact me at <a href='mailto:antrikshy@gmail.com'>Antrikshy@gmail.com</a>
-                </span>
                 </p>
             </div>
         </div>

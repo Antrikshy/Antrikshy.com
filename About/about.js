@@ -25,12 +25,11 @@ $(document).ready(function() {
             $("#about_website_header").fadeIn(400);
         }
         if (scrollTop > 900) {
-            $("#about_website_text").fadeIn(400);
-        }
-        if (scrollTop > 1100) {
-            $("#photo1").fadeIn('slow', function() {
-                $("#photo2").fadeIn('slow', function() {
-                    $("#photo3").fadeIn('slow');
+            $("#about_website_text").fadeIn(400, function() {
+                $("#photo1").fadeIn('slow', function() {
+                    $("#photo2").fadeIn('slow', function() {
+                        $("#photo3").fadeIn('slow');
+                    });
                 });
             });
         }

@@ -18,28 +18,11 @@
 }*/
 
 html, body {
-    background-color: #DCF4F7;
+    background-color: #E2F1F3;
 }
 
 .content {
     text-align: center;
-}
-
-.download_link {
-    margin: 0 auto;
-    width: 200px;
-    border-radius: 5px;
-    transition: 0.5s;
-    background-color: lightblue;
-    text-align: center;
-    font-family: 'Source Serif Pro';
-    font-weight: 600;
-    font-size: 25px;
-}
-
-.download_link:hover {
-    transition: 0.5s;
-    background-color: limegreen;
 }
 
 #drive_resume {
