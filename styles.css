@@ -137,17 +137,17 @@ ol {
 .download_link {
     margin: 0 auto;
     width: 180px;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: 0.5s;
     text-align: center;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 25px;
-    background: linear-gradient(to bottom, #34AAE8, #458EFF);
-    background: -webkit-linear-gradient(top, #34AAE8, #458EFF);
-    background: -moz-linear-gradient(top, #34AAE8, #458EFF);
-    background: -ms-linear-gradient(top, #34AAE8, #458EFF);
-    background: -o-linear-gradient(top, #34AAE8, #458EFF);
+    background: linear-gradient(to bottom, #34AAE8, #3DA1E8);
+    background: -webkit-linear-gradient(top, #34AAE8, #3DA1E8);
+    background: -moz-linear-gradient(top, #34AAE8, #3DA1E8);
+    background: -ms-linear-gradient(top, #34AAE8, #3DA1E8);
+    background: -o-linear-gradient(top, #34AAE8, #3DA1E8);
 }
 
 .download_link:hover {
@@ -161,6 +161,44 @@ ol {
 
 .download_link:hover a {
     color: white;
+}
+
+.blog_link {
+    margin: 0 auto;
+    width: 220px;
+    height: 45px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to bottom, #4F58BF, #363E96);
+    background: -webkit-linear-gradient(top, #4F58BF, #363E96);
+    background: -moz-linear-gradient(top, #4F58BF, #363E96);
+    background: -ms-linear-gradient(top, #4F58BF, #363E96);
+    background: -o-linear-gradient(top, #4F58BF, #363E96);
+}
+
+.blog_link:hover {
+    background: linear-gradient(to bottom, #34AAE8, #3DA1E8);
+    background: -webkit-linear-gradient(top, #34AAE8, #3DA1E8);
+    background: -moz-linear-gradient(top, #34AAE8, #3DA1E8);
+    background: -ms-linear-gradient(top, #34AAE8, #3DA1E8);
+    background: -o-linear-gradient(top, #34AAE8, #3DA1E8);
+}
+
+.blog_link a {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+}
+
+.blog_link:hover a {
+    color: black;
 }
 
 .footer {
