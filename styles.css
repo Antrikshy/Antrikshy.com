@@ -143,11 +143,11 @@ ol {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 25px;
-    background: linear-gradient(to bottom, #34AAE8, #3DA1E8);
-    background: -webkit-linear-gradient(top, #34AAE8, #3DA1E8);
-    background: -moz-linear-gradient(top, #34AAE8, #3DA1E8);
-    background: -ms-linear-gradient(top, #34AAE8, #3DA1E8);
-    background: -o-linear-gradient(top, #34AAE8, #3DA1E8);
+    background: linear-gradient(to bottom, #34AAE8, #458EFF);
+    background: -webkit-linear-gradient(top, #34AAE8, #458EFF);
+    background: -moz-linear-gradient(top, #34AAE8, #458EFF);
+    background: -ms-linear-gradient(top, #34AAE8, #458EFF);
+    background: -o-linear-gradient(top, #34AAE8, #458EFF);
 }
 
 .download_link:hover {
@@ -165,7 +165,7 @@ ol {
 
 .blog_link {
     margin: 0 auto;
-    width: 220px;
+    width: 150px;
     height: 45px;
     border-radius: 3px;
     text-align: center;
@@ -178,11 +178,11 @@ ol {
 }
 
 .blog_link:hover {
-    background: linear-gradient(to bottom, #34AAE8, #3DA1E8);
-    background: -webkit-linear-gradient(top, #34AAE8, #3DA1E8);
-    background: -moz-linear-gradient(top, #34AAE8, #3DA1E8);
-    background: -ms-linear-gradient(top, #34AAE8, #3DA1E8);
-    background: -o-linear-gradient(top, #34AAE8, #3DA1E8);
+    background: linear-gradient(to bottom, #34AAE8, #458EFF);
+    background: -webkit-linear-gradient(top, #34AAE8, #458EFF);
+    background: -moz-linear-gradient(top, #34AAE8, #458EFF);
+    background: -ms-linear-gradient(top, #34AAE8, #458EFF);
+    background: -o-linear-gradient(top, #34AAE8, #458EFF);
 }
 
 .blog_link a {
