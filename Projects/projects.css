@@ -40,13 +40,19 @@ ol {
     padding-bottom: 130px;
 }
 
+.code {
+    font-family: monospace;
+    font-size: 10pt;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .project_container {
     display: inline-block;
     width: 80%;
     height: 150px;
     border: 1px solid;
     margin-bottom: 20px;
-    background-color: #34AAE8;
+    background-color: #33B6E8;
     box-shadow: 0 0 3px;
     -moz-transition: 0.15s all ease-in-out;
     -ms-transition: 0.15s all ease-in-out;
@@ -55,7 +61,7 @@ ol {
 }
 
 .project_container:hover {
-    background-color: #F2552C;
+    background-color: #F2802C;
     -moz-transition: 0.15s all ease-in-out;
     -ms-transition: 0.15s all ease-in-out;
     -webkit-transition: 0.15s all ease-in-out;

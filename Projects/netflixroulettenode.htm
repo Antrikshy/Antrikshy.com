@@ -46,12 +46,25 @@
                 <div class="project_description">
                     <h2>About</h2>
                     <p>
-                        This NetflixRoulette library is a module I wrote to learn Node.js.<br /><br />
+                        This NetflixRoulette library is a simple module I wrote to learn Node.js.<br /><br />
 
-                        The module allows you to access the very simple Node.js API without messing around with HTTP request libraries. The module supports all the endpoints that NetflixRoulette supports and I hope to keep it updated.<br /><br />
+                        The module allows you to interface with the very simple Node.js API without messing around with HTTP request libraries in your Node.js project. The module supports all the endpoints that NetflixRoulette supports and I hope to keep it updated.<br /><br />
 
-                        Currently, it exports functions to allow users to interface with the title, actor and director endpoints in the API. See the GitHub link below for instructions. The module is available for download via npm.
+                        Currently, it exports functions to allow users to interface with the title, actor and director endpoints in the API. 
                     </p>
+                    <h2>Instructions</h2>
+                        <p>Install using <span class="code">npm install netflixroulette</span>.<br /><br />
+
+                        Require using <br /><br /><span class="code">var NetflixRoulette = require('netflix-roulette');</span><br /><br /> Now you can interface with the three endpoints NetflixRoulette currently provides:<br /><br />
+
+                        <span class="code">NetflixRoulette.title('Tucker & Dale vs. Evil', callbackFunc(error, data), 2010);</span><br />[year parameter optional]<br /><br />
+                        <span class="code">NetflixRoulette.actor('Keira Knightley', callbackFunc(error, data))</span>;<br /><br />
+                        <span class="code">NetflixRoulette.director('Christopher Nolan', callbackFunc(error, data));</span><br /><br />
+
+                        NetflixRoulette does not require any sort of authentication because its API is open. <span class="code">error</span> is only set when there is a problem requesting data from the server. Any errors in finding the data will be reported in the <span class="code">data</span> variable with <span class="code">error == null</span>.<br /><br />
+
+                        Refer to <a href="http://netflixroulette.net/api/">NetflixRoulette's API guide</a> for details on returned data.
+                        </p>
                     <h2>Download + GitHub</h2>
                     <div class="download_and_github">
                         <div class="download_button_area">
